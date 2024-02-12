@@ -13,6 +13,51 @@ class BMI_Result extends StatefulWidget {
 }
 
 class _BMI_ResultState extends State<BMI_Result> {
+  Row Bmi_Row(String rowText,String image)
+  {
+    return Row(
+      children: [
+        const Text("( ",style: const TextStyle(
+          color: Colors.white,
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+        ),),
+        Text(rowText,style: const TextStyle(
+          color: Colors.white,
+          fontSize: 23,
+          fontWeight: FontWeight.bold,
+        ),),
+        SizedBox(width: 10,),
+        CircleAvatar(
+          radius: 20,
+          backgroundImage: Image.asset(
+            image,
+            fit: BoxFit.contain, // Adjust the fit as needed (cover, contain, etc.)
+          ).image,
+        ),const Text(" )",style: const TextStyle(
+          color: Colors.white,
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+        ),),
+      ],
+    );
+  }
+  Widget result(var result){
+if(result < 18)
+  {
+    return Bmi_Row("Under Weight", "images/Under.png");
+  }
+else if(result >=18 && result <=24)
+  {
+    return Bmi_Row("Normal", "images/Normal.png");
+  }else if(result >24 && result <=30)
+{
+  return Bmi_Row("Over Weight", "images/Over.png");
+}
+else{
+  return Bmi_Row("Over Weight", "images/Obese.png");
+}
+  }
   @override
   Widget build(BuildContext context) {
     // Use a contrasting color palette for background and text
@@ -55,13 +100,20 @@ class _BMI_ResultState extends State<BMI_Result> {
             ),
             SizedBox(height: spacing), // Add vertical spacing
             // Consider highlighting result based on BMI range
-            Text(
-              "Result: ${widget.result}", // Show one decimal place
-              style: TextStyle(
-                color: textColor,
-                fontSize: fontSize,
-                fontWeight: FontWeight.bold, // Adjust weight
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Result: ${widget.result}", // Show one decimal place
+                  style: TextStyle(
+                    color: textColor,
+                    fontSize: fontSize,
+                    fontWeight: FontWeight.bold, // Adjust weight
+                  ),
+                ),
+  const SizedBox(width: 5,),
+                result(widget.result),
+              ],
             ),
             SizedBox(height: spacing),
             Text(
