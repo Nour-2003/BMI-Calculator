@@ -1,16 +1,10 @@
-# bmi_calculator
+# BMI Calculator
+![image](https://github.com/Nour-2003/bmi_Calculator/assets/102908746/089439c0-925d-41b6-98b0-908b1b1106a5)
 
-A new Flutter project.
+![image](https://github.com/Nour-2003/bmi_Calculator/assets/102908746/aaf631a5-ed53-44cc-b7bc-8be6d6122182)
 
-## Getting Started
+![image](https://github.com/Nour-2003/bmi_Calculator/assets/102908746/c2f55fad-de9c-45a1-904d-a47f937b566b)
 
-This project is a starting point for a Flutter application.
+![image](https://github.com/Nour-2003/bmi_Calculator/assets/102908746/efe00bbe-f180-41b1-acff-cd6c35ff7435)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/Nour-2003/bmi_Calculator/assets/102908746/e0e8e476-9efd-49e6-9b87-e283843d5cc9)
