@@ -55,7 +55,7 @@ else if(result >=18 && result <=24)
   return Bmi_Row("Over Weight", "images/Over.png");
 }
 else{
-  return Bmi_Row("Over Weight", "images/Obese.png");
+  return Bmi_Row("Obese", "images/Obese.png");
 }
   }
   @override
@@ -89,7 +89,7 @@ else{
           children: [
             // Consider using an icon for gender
             Image.asset("images/BMI.png",scale: 2,),
-            SizedBox(height: 50,),
+            const SizedBox(height: 50,),
             Text(
               "Gender: ${widget.gender}",
               style: TextStyle(
