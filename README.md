@@ -1,4 +1,6 @@
 # BMI Calculator
+![image](https://github.com/Nour-2003/BMI-Calculator/assets/102908746/30afcbcd-4956-476e-8bdb-8ba2999971a2)
+
 ![image](https://github.com/Nour-2003/bmi_Calculator/assets/102908746/089439c0-925d-41b6-98b0-908b1b1106a5)
 
 ![image](https://github.com/Nour-2003/bmi_Calculator/assets/102908746/aaf631a5-ed53-44cc-b7bc-8be6d6122182)
